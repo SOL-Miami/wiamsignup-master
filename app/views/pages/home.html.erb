@@ -26,7 +26,7 @@
                   <%= f.input :email, label: false, placeholder: "Email", input_html: {class: 'form-control'} %>
                 </div>
                 <div class="col-sm-4">
-                  <%= f.input :state, label: false, placeholder: "State", input_html: {class: 'form-control'} %>
+                  <%= f.input :state, label: false, collection: us_states, prompt: "Select your state", input_html: {class: 'form-control'}  %>
                 </div>
                 <div class="col-sm-4">
                   <%= f.button :submit, "Submit",:name => 'commit', :id=>"news_create_form_submit", class: 'btn btn-default'  %>

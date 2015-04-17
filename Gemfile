@@ -24,6 +24,8 @@ gem "simple_form"
 gem "title"
 gem "uglifier"
 gem "unicorn"
+gem 'devise', '~> 3.4.1'
+gem 'activeadmin', github: 'activeadmin', branch: 'master'
 
 group :development do
   gem "spring"

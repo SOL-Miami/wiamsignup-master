@@ -14,21 +14,21 @@
           <%= simple_form_for Newsletter.new, html: { novalidate: true }, remote: true do |f| %>
             <div class="news">
               <div class="row">
-                <div class="col-xs-6 no-padding">
+                <div class="col-sm-6 no-padding">
                   <%= f.input :first_name, label: false, placeholder: "First Name", input_html: {class: 'form-control'} %>
                 </div>
-                <div class="col-xs-6 no-padding">
+                <div class="col-sm-6 no-padding">
                   <%= f.input :last_name, label: false, placeholder: "Last Name", input_html: {class: 'form-control'} %>
                 </div>
               </div>
               <div class="row">
-                <div class="col-xs-7 no-padding">
+                <div class="col-sm-7 no-padding">
                   <%= f.input :email, label: false, placeholder: "Email", input_html: {class: 'form-control'} %>
                 </div>
-                <div class="col-xs-3 no-padding">
+                <div class="col-sm-3 no-padding">
                   <%= f.input :state, label: false, collection: us_states, prompt: "State", input_html: {class: 'form-control'}  %>
                 </div>
-                <div class="col-xs-2 no-padding">
+                <div class="col-sm-2 no-padding">
                   <%= f.button :submit, "Submit",:name => 'commit', :id=>"news_create_form_submit", class: 'btn btn-default'  %>
                 </div>
               </div>
